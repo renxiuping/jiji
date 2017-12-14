@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <!-- Demo styles -->
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .span1{
+      position: absolute;
+      top:26%;
+      font-size:18vw;
+      color: #028ccd;
+      left: 54%;
+      font-family: "迷你简雪峰";
+    }
+    .span2{
+      position: absolute;
+      top:38%;
+      font-size: 18vw;
+      color: #028ccd;
+      left: 54%;
+      font-family: "迷你简雪峰";
+    }
+    .span3{
+      position: absolute;
+      top:50%;
+      font-size: 18vw;
+      color: #028ccd;
+      left: 54%;
+      font-family: "迷你简雪峰";
+    }
+    .span4{
+      position: absolute;
+      top:63%;
+      font-size: 18vw;
+      color: #028ccd;
+      left: 54%;
+      font-family: "迷你简雪峰";
+    }
+    .one-center img{
+      width: 59%;
+      height: 31%;
+      position: absolute;
+      top: 46%;
+      left: 26%;
+    }
+    .music {
+      width: 60px;
+      height: 60px;
+      position: fixed;
+      top: 4%;
+      left: 80%;
+      z-index: 9;
+    }
+
+    .img2 {
+      width: 44px;
+      height: 44px;
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      animation: run 6s infinite linear;
+    }
+
+    @keyframes run {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .img1 {
+      width: 60px;
+      height: 60px;
+    }
+    .two-top{
+      width: 46%;
+      position: absolute;
+      top: 27%;
+      left: 39%;
+      text-align: left;
+    }
+    .three{
+      background: url("img/u=919713729,2927162316&fm=27&gp=0.jpg");
+      background-size: 100% 100%;
+    }
+    .three-top{
+      width: 52%;
+      height: 63%;
+      position: absolute;
+      left: 35%;
+      top: 20%;
+      border: 6px solid #0c5baa;
+    }
+    .p1{
+      position: absolute;
+      top: 21%;
+      left: 41%;
+    }
+    .p2{
+      position: absolute;
+      top:25%;
+      left: 41%;
+    }
+    .p3{
+      position: absolute;
+      top:30%;
+      left: 41%;
+    }
+    .p4{
+      position: absolute;
+      top:35%;
+      left: 41%;
+    }
+    .p5{
+      position: absolute;
+      top:40%;
+      left: 41%;
+    }
+    .p6{
+      position: absolute;
+      top:45%;
+      left: 41%;
+    }
+    .swiper-button-next{
+      position: absolute;
+      top: auto;
+      bottom: 2%;
+      left: 50%;
+      transform: rotate(-90deg);
+      margin-left: -13.5px;
+      animation: a 2s linear infinite;
+    }
+    @keyframes a{
+      from{
+        opacity: 1;
+        transform: translate(0,0) rotate(-90deg);
+      }
+      to{
+        opacity: 0.1;
+        transform: translate(0,-20px) rotate(-90deg);
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- Swiper -->
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide three">
+      <div class="three-top ani" swiper-animate-effect="rollIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5"> </div>
+      <span class="span1 ani" swiper-animate-effect="rollIn" swiper-animate-duration="3s" swiper-animate-delay="1.5">生</span>
+      <span class="span2 ani" swiper-animate-effect="rollIn" swiper-animate-duration="3.5s" swiper-animate-delay="2">日</span>
+      <span class="span3 ani" swiper-animate-effect="rollIn" swiper-animate-duration="4s" swiper-animate-delay="2.5">快</span>
+      <span class="span4 ani" swiper-animate-effect="rollIn" swiper-animate-duration="4.5s" swiper-animate-delay="3">乐</span>
+
+    </div>
+    <div class="swiper-slide three">
+      <div class="three-top ani" swiper-animate-effect="rollIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5"> </div>
+      <div class="two-top ani" swiper-animate-effect=" zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">今天是你的生日，为你送上一份生日祝福：点燃生日的红蜡，留住这段美好的记忆；放飞所有的
+        伤情收起所有的眼泪，在生日快乐的歌声中陶醉！愿你快乐每一天！
+      </div>
+    </div>
+    <div class="swiper-slide three">
+     <div class="three-top ani" swiper-animate-effect="rollIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5"> </div>
+      <p class="p1 ani"  swiper-animate-effect="rollIn" swiper-animate-duration="1s" swiper-animate-delay="1">愿作一辈子的朋友：</p>
+      <p class="p2 ani"  swiper-animate-effect="flip" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">温馨提示</p>
+      <p  class="p3 ani"  swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="3">*做事太鲁莽</p>
+      <p  class="p4 ani"  swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="4">*不按时吃饭</p>
+      <p  class="p5 ani"  swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="5">*不按时睡觉</p>
+      <p  class="p6 ani"  swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="6">*每天傻乎乎</p>
+    </div>
+  </div>
+  <div class="music">
+    <img src="img/music.gif" alt="" class="img1">
+    <img src="img/music_off.png" alt="" class="img2">
+    <audio src="img/shengri.mp3"></audio>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-button-next swiper-button-black"></div>
+  <!--<div class="swiper-pagination"></div>-->
+</div>
+
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+<script src="js/swiper.animate1.0.2.min.js"></script>
+<script src="js/index.js"></script>
+<!-- Initialize Swiper -->
+
+</body>
+</html>
